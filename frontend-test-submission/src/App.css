@@ -30,36 +30,9 @@ body {
 
 .App {
   min-height: 100vh;
-  background: linear-gradient(120deg, #0f172a 0%, #1e293b 50%, #3b82f6 100%);
-  background-size: 200% 200%;
-  animation: gradientMove 10s ease-in-out infinite;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
   position: relative;
   overflow-x: hidden;
-  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* 4. Fade-in animation for main app content */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 
 .App::before {
@@ -93,21 +66,22 @@ body {
   z-index: 1;
 }
 
-/* 2. Card hover pop effect */
+
 .MuiCard-root {
   border-radius: 20px;
-  background: rgba(30, 41, 59, 0.85);
-  backdrop-filter: blur(24px);
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(51, 65, 85, 0.5);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
 }
 
 .MuiCard-root:hover {
-  transform: scale(1.025) translateY(-4px);
-  box-shadow: 0 32px 64px -12px rgba(59, 130, 246, 0.18);
-  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 32px 64px -12px rgba(0, 0, 0, 0.35);
+  border-color: rgba(59, 130, 246, 0.3);
 }
+
 
 .MuiButton-root {
   border-radius: 16px;
@@ -205,15 +179,14 @@ body {
   color: #3b82f6;
 }
 
-/* 3. Glassy, more rounded tabs */
+
 .MuiTabs-root {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(32px);
-  border-radius: 28px;
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
   margin-top: 32px;
-  border: 1px solid rgba(51, 65, 85, 0.4);
-  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.1);
-  overflow: hidden;
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .MuiTab-root {
@@ -240,6 +213,7 @@ body {
   height: 4px;
   border-radius: 2px;
 }
+
 
 .MuiTableContainer-root {
   background: rgba(30, 41, 59, 0.6);
@@ -271,6 +245,7 @@ body {
   background: rgba(59, 130, 246, 0.05);
 }
 
+
 .MuiAlert-root {
   border-radius: 16px;
   font-weight: 500;
@@ -300,6 +275,7 @@ body {
   color: #fbbf24;
   border: 1px solid rgba(245, 158, 11, 0.2);
 }
+
 
 .MuiChip-root {
   font-weight: 600;
@@ -348,6 +324,7 @@ body {
   background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
 }
 
+
 a {
   color: #60a5fa;
   text-decoration: none;
@@ -360,6 +337,7 @@ a:hover {
   text-decoration: underline;
 }
 
+
 h1,
 h2,
 h3,
@@ -371,19 +349,23 @@ h6 {
   line-height: 1.2;
 }
 
+
 .MuiCircularProgress-root {
   color: #3b82f6;
 }
 
+
 .MuiDivider-root {
   border-color: rgba(51, 65, 85, 0.5);
 }
+
 
 .MuiPaper-root {
   background: rgba(30, 41, 59, 0.8);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(51, 65, 85, 0.5);
 }
+
 
 .MuiSnackbar-root {
   bottom: 32px !important;
@@ -395,6 +377,7 @@ h6 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 
 .hero-input {
   background: rgba(30, 41, 59, 0.8) !important;
@@ -416,6 +399,7 @@ h6 {
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1) !important;
 }
 
+
 @media (max-width: 768px) {
   .MuiContainer-root {
     padding-left: 16px;
@@ -432,6 +416,7 @@ h6 {
   }
 }
 
+
 .status-active {
   color: #34d399;
   font-weight: 600;
@@ -441,6 +426,7 @@ h6 {
   color: #f87171;
   font-weight: 600;
 }
+
 
 .qr-placeholder {
   width: 32px;

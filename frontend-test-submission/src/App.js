@@ -104,7 +104,7 @@ function App() {
             borderBottom: "1px solid rgba(51, 65, 85, 0.5)",
           }}
         >
-          <Toolbar sx={{ py: 2, px: { xs: 2, md: 4 }, flexDirection: "column", alignItems: "flex-start" }}>
+          <Toolbar sx={{ py: 2, px: { xs: 2, md: 4 } }}>
             <Typography
               variant="h4"
               component="div"
